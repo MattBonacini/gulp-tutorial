@@ -3,7 +3,7 @@ const browserSync = require('browser-sync').create();
 
 function watch(done) {
     browserSync.init({
-      proxy: "http://testyt.local",
+      proxy: "http://link_to_site.local",
     });
     gulp.watch('./**/*.css').on('change',browserSync.reload);
     gulp.watch('js/*.js').on('change',browserSync.reload);
